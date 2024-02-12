@@ -8,7 +8,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
-    "storybook-generate": "sb-rn-get-stories"
+    "storybook-generate": "sb-rn-get-stories",
+    "analyze:web": "npx source-map-explorer 'dist/client/_expo/static/js/web/*.js' 'dist/client/_expo/static/js/web/*.js.map'",
+    "analyze:ios": "source-map-explorer 'dist/_expo/static/js/ios/*.js' 'dist/_expo/static/js/ios/*.js.map'",
+    "analyze:android": "source-map-explorer 'dist/_expo/static/js/android/*.js' 'dist/_expo/static/js/android/*.js.map'"
   },
   "dependencies": {
     "@gluestack-style/react": "^1.0.45",
@@ -57,7 +60,8 @@
     "@storybook/react-native": "^7.6.15",
     "@testing-library/react-native": "^12.4.3",
     "babel-loader": "^8.3.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "source-map-explorer": "^2.5.3"
   },
   "private": true,
   "jest": {
