@@ -8,7 +8,12 @@ const main: StorybookConfig = {
     '@storybook/addon-a11y', 
     '@storybook/addon-storysource',
     '@storybook/addon-designs',
-    'storybook-dark-mode'
+    'storybook-dark-mode',
+    '@storybook/addon-actions',
+    '@storybook/addon-controls',
+    '@storybook/addon-backgrounds',
+    '@storybook/addon-measure',
+    '@storybook/addon-outline'
   ],
 };
 
